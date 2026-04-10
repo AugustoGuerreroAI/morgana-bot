@@ -26,15 +26,6 @@ async def on_message(message):
     if message.author == cliente.user:
         return
 
-    if message.content.startswith('$admin'):
-        await message.channel.send('Dale <@809903188563329054> Dame admin GORDO CHUPATETAS!')
-
-
-@cliente.event
-async def on_message(message):
-    if message.author == cliente.user:
-        return
-
     member = message.author
 
     if (member.activity):
@@ -47,24 +38,6 @@ async def on_message(message):
 @cliente.event
 async def on_typing(channel, user, _):
     await channel.send(f'doxeadisimo broder {user.name}')
-
-
-@cliente.event
-async def on_message_edit(before, after):
-    channel = before.channel
-    await channel.send(f'MENSAJE ANTERIOR: {before.content}')
-    await channel.send(f'MENSAJE AHORA: {after.content}')
-    await channel.send(f'eh wachin por que editas el mensaje gordo puto?')
-
-# @cliente.event
-# async def on_message(message):
-#     if message.author == cliente.user:
-#         return
-    
-#     # Reaccionamos con el moai directamente
-#     await message.add_reaction("👩🏿")
-#     await message.add_reaction("❌")
-#     await message.add_reaction("👎🏿")
 
 
 cliente.run(TOKEN)
