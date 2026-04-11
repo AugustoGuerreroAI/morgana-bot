@@ -79,3 +79,10 @@ The decorator `@cliente.event` basically means a **decorator**. It’s not exact
 * **`.event`:** The specific method that registers functions to respond to events from the Discord API
 
 
+### 04-09-2026
+Learned again about git commits and created a repository. This time I want to know when I worked in this project
+
+Learned how to Implement OOP on python, I already know how to implement that principle but with Java, now I'm putting into test my knowledge of the subject
+
+Learned about classes in python, how they are like a custom type data and how inheritance works here...
+
